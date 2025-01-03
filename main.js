@@ -1,18 +1,61 @@
-let box = document.querySelector("#light")
-let button1 = document.querySelector("#btnOn")
-let button2 = document.querySelector("#btnOff")
+
+ 
+let heading = document.querySelector("#tiro")
+let button1 = document.querySelector("#btnIncrement")
+let button2 = document.querySelector("#btnReset")
 
 
-// mesha uu ka dhacayo actionka
-
-
-
-button1.addEventListener("click", function(){
-    box.style.backgroundColor = "yellow"
-})
+ let value =0
 
 
 
-button2.addEventListener("click", function(){
-    box.style.backgroundColor = "transparent"
-})
+ button1.addEventListener("click", function(){
+    value ++
+    heading.innerHTML = value
+
+    if(value == 1 ){
+        document.body.style.backgroundColor = "red"
+     }
+ 
+
+     else if(value == 2 ){
+        document.body.style.backgroundColor = "blue"
+     }
+
+
+     else if(value == 3 ){
+        document.body.style.backgroundColor = "yellow"
+     }
+
+
+     else if(value == 4 ){
+        document.body.style.backgroundColor = "green"
+     }
+
+
+     
+     else if(value == 5 ){
+        document.body.style.backgroundColor = "orange"
+     }
+
+   else{
+    document.body.style.backgroundColor = "white"
+   }
+ })
+
+
+// value = 0
+ 
+ button2.addEventListener("click", function(){
+    value = 0
+    heading.innerHTML = value
+ })
+
+
+
+
+
+
+
+
+
